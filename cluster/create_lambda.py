@@ -21,8 +21,7 @@ response = client.create_function(
         'SubnetIds': [config.subnet_id],
         'SecurityGroupIds': [config.security_group_id]
     },
-    TracingConfig={'Mode': 'PassThrough'},
-    Tags={'AppName': config.tag_app_name}
+    TracingConfig={'Mode': 'PassThrough'}
 )
 print(response)
 
