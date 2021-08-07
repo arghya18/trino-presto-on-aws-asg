@@ -38,7 +38,7 @@ response = client.create_auto_scaling_group(
             'HeartbeatTimeout': config.scale_down_timeout,
             'DefaultResult': 'ABANDON',
             'NotificationTargetARN': config.sqs_arn,
-            # 'RoleARN': config.sqs_role_arn
+            'RoleARN': config.sqs_role_arn
         }
     ]
 )
